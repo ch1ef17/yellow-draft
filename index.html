@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Monkey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url(back.jpg);
+            background-repeat: repeat;
+            background-position: top left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <!-- navbar-->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Best Coffee <br> In the City</h1>
+                    <a href="menu.html" class="btn">MENU &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container1">
+        <h1 class="title">Featured Products</h1>
+            <!-- Add Featured Products here -->
+
+            <div class="product-item1">
+                <span class="product-name">prod1</span>
+                <span class="price">$10</span>
+              </div>
+        
+              <div class="product-item1">
+                <span class="product-name">prod2</span>
+                <span class="price">$20</span>
+              </div>
+        
+              <div class="product-item1">
+                <span class="product-name">prod3</span>
+                <span class="price">$30</span>
+              </div>
+    </div>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-87d49e54-bf10-4553-9a91-4068b46b4af3" data-elfsight-app-lazy></div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3255.776203798095!2d25.1471607!3d35.3115419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a5990b9e81ce5%3A0xcb7b6e42bb8e7b4!2sYellow%20Monkey%20Coffee!5e0!3m2!1sel!2sgr!4v1731174630291!5m2!1sel!2sgr" 
+                        width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Contacts</h3>
+                    <ul>
+                        <li>2810323790</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100076158784494">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/yellow_monkey___/">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2024-2025 | Yellow Monkey</p>
+        </div>
+    </div>
+    
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        // Toggle function for the menu items
+        function menutoggle() {
+            MenuItems.classList.toggle("show");
+        }
+    </script>
+    
+
+</body>
+</html>

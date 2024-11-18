@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(back.jpg);
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+/* Logo styling */
+.logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container1 {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.small-container2 {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Row and Column Layout */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.col-2 h1 {
+    font-size: 70px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 130px;
+    height: 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Product item styling */
+.product-item1 {
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.product-list2 {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap onto the next line */
+    gap: 20px;        /* Add space between items */
+    justify-content: space-between;
+}
+
+.product-item2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    max-width: 500px;
+}
+
+.product-item1 .product-name,
+.product-item2 .product-name {
+    font-size: 20px;
+    color: #333;
+}
+
+.product-item2 .product-name {
+    font-size: 18px;
+    width: 70%;  /* Product name takes 70% of the space */
+}
+
+.product-item1 .price,
+.product-item2 .price {
+    font-size: 20px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.elfsight-app-87d49e54-bf10-4553-9a91-4068b46b4af3 {
+    width: 80%;
+    margin: 50px auto; /* Centers the widget */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    margin: 10px;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 ul, .footer-col-3 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col-2 li, .footer-col-3 li {
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+.footer p {
+    color: #8a8a8a;
+    text-align: center;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Mobile View Styling */
+.menu-icon {
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Adjustments for screens < 500px */
+@media (max-width: 500px) {
+    /* Center the navbar items */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hide the navbar items initially */
+    #MenuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Display the menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show #MenuItems when it’s toggled to `display: flex` */
+    #MenuItems.show {
+        display: flex;
+    }
+
+    /* Make the product containers fit smaller screens */
+    .product-item1,
+    .product-item2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Adjust the footer layout for smaller screens */
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col-2, .footer-col-3 {
+        margin-left: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the content */
+        justify-content: center; /* Centers vertically, if needed */
+    }
+
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0; /* Add some margin to avoid cramping */
+    }
+
+    .col-2 h1 {
+        font-size: 50px;  /* Adjust font size for smaller screens */
+        line-height: 45px; /* Reduce line-height */
+        margin: 0;
+    }
+
+    .btn {
+        margin: 20px 0;
+    }
+}
